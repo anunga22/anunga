@@ -1,0 +1,31 @@
+/*
+./src/scss/ieps_framework/modules/_paginations.scss
+ MODULE DES PAGINATIONS
+*/
+.pagination {
+    list-style: none;
+    padding: 0;
+    margin: 50px 0 50px 0px;
+    display: flex;
+    justify-content: $paginationJustifyContent;
+    align-items: $paginationAlignVertical;
+    a {
+      color : $paginationCouleurTexteNormal;
+      background: $paginationCouleurNormal;
+      box-shadow: 1px 1px 1px 0px $couleurF1;
+      padding: $paginationPadding;
+      text-decoration: none;
+      border: $paginationBordNormal;
+      border-radius: 5px;
+
+      margin: 0 4px;
+      font-size: 18px;
+    }
+    li:not(:last-of-type) a {
+      border-right: $paginationBordNormal;
+    }
+    li.actif a, a:hover {
+      background: $paginationCouleurActif;
+      color: $paginationCouleurTexteActif;
+    }
+  }

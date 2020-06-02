@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>The Meridian Sun</title>
+  <link rel="stylesheet" href="./index.css"/>
+  <link rel="stylesheet" href="./app.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+
+  <!-- J'ai redirigé les attributs href des balises link car je n'ai pas
+        souhaité refaire la structure des dossiers sur webhost juste pour y
+        stocker les fichiers.css
+     -->
+</head>
+<body>
+  <!--HEADER-->
+  <main class="boite-fixe-centree grille">
+    <header class="background">
+      <h1 class="m6">The Meridian Sun</h1>
+      <!--BOUTON RECHERCHER-->
+      <div class="m2 rechercher">
+        <form class="example" action="/action_page.php" id="recherche">
+          <input type="text" placeholder="Search" name="search">
+          <button type="submit"><img src="../document/icon-search.png" alt="" title="" />
+         </button>
+       </form>
+    </div>
+
+ <!--MENU-ICONES SOCIAUX-->
+     <nav class="m4 icones">
+      <ul class= "menu_type__horizontal_1">
+        <li class="actif "><a href="#"><img src="../document/icon-rss.png" alt="" title="" /></a></li>
+        <li><a href="#"><img src="../document/icon-facebook.png"  alt="" title="" /> </a></li>
+        <li><a href="#"><img src="../document/icon-twitter.png"  alt="" title="" /></a></li>
+        <li><a href="#"><img src="../document/icon-dribbble.png"  alt="" title="" /></a></li>
+        <li><a href="#"><img src="../document/icon-linkedin.png"  alt="" title="" /></a></li>
+        <li><a href="#"><img src="../document/icon-pinterest.png"  alt="" title="" /></a></li>
+      </ul>
+    </nav>
+
+<!--BOUTON RECHERCHE BLOG-->
+<div class=" form_blog">
+ <div class="select m-cache ">
+  <select>
+    <option>---Navigation---</option>
+    <option>Blog</option>
+    <option>About</option>
+    <option>contact</option>
+  </select>
+</div>
+</div>
+  </header>
+<!--BOUTON RECHERCHE BLOG VISIBLE M L-->
+ <div id="menu" class="m-visible m12">
+   <nav>
+      <ul class="menu_type__horizontal">
+        <li><a href="#">blog</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+    <div class="triangle-l l-visible"></div>
+    <div class="triangle-r l-visible"></div>
+   </nav>
+</div>
+<aside>
+<p class="texte_alignement__centre "> <span class="texte_couleur__2">Home</span>/Contact</p>
+</aside>
+<hr />
+<h2 class="margin_bottom">Contact</h2>
+
+<!--CARTE-->
+   <div id="background_map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3012.525541495715!2d29.055666350226563!3d40.96997162962994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac7777e54394b%3A0xfa7fc7a49fa899b4!2sGoztepe%20Park!5e0!3m2!1sfr!2sbe!4v1590506052004!5m2!1sfr!2sbe"
+   id="map">
+   </iframe>
+<!-- width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">       -->
+ </div>
+ <section class="background margin">
+<h2 class="texte_alignement__gauche margin_top margin_bottom">Feel free to drop me a line </h2>
+<p class="contact">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</p>
+
+<!--FORMULAIRE-->
+
+ <div class="background_formulaire grille">
+   <form action="#" class="" method="post"  >
+     <ul class="form">
+       <li>
+        <input type="text" name="Name" placeholder="Name Required" class="formItem s8 m10"/>
+       </li>
+      <li>
+       <input type="email" name="Email Adresse" placeholder="Email Required" class="formItem"/>
+    </li>
+    <li>
+      <input type="url" name="Name" placeholder="Subjet" class="formItem"/>
+   </li>
+   <li>
+      <textarea id="subjet"  name="message" rows="10" cols="30" class="formItem1"></textarea>
+      <!--<textarea name="message" rows="10" cols="20"></textarea>-->
+  </li>
+  <li>
+    <input type="submit" value="Submit" class="submit" />
+  </li>
+   </ul>
+   </form>
+ </div>
+ <!--<div class="">
+    <form method="post" action="#" class="m-form">
+      <input type="text"  name="nom"   placeholder="Name Required" class="formItem">
+      <input type="email" name="email" placeholder="Email Required" class="formItem">
+      <input type="url"  name="Name"  placeholder="Subjet" class="formItem"/>
+      <textarea  name="message" rows="10" cols="50" ></textarea>
+      <input type="submit" value="Submit" class="formItem" />
+    </form>
+  </div>-->
+
+</section>
+<hr />
+</main>
+
+ <!-- FOOTER -->
+<footer id="footer" class="grille grille-gouttiere">
+<!--BOUTON RECHERCHER-FOOTER-->
+ <article class="m3">
+  <h3>search</h3>
+   <div class="m5" id="recherche_footer">
+    <form action="research.php">
+     <input class="inputSubmit" type="submit" name="search" value="Search"/>
+   </form>
+ </div>
+   <h3 class="meridian"> recents posts</h3>
+     <ul class="posts">
+     <li class="actif "><a href="#"> A wonderful Complexity </a></li>
+     <li><a href="#">The Meridian Sun </a></li>
+     <li><a href="#">Gallery Format</a></li>
+     <li><a href="#">John Doe</a></li>
+     <li><a href="#">A Day in The Life</a></li>
+    </ul>
+   </article>
+
+<!---Twitter-->
+<article class="m3">
+<h3>Twitter</h3>
+ <ul class="Twitter">
+  <li><a href="#">&rarr; Follow @iepsdesign </a></li>
+ </ul>
+</article>
+
+<!---TAG-->
+<article class="m3 tag">
+<h3>Tags</h3>
+ <span>
+  blogroll<span style="font-size:2.2rem;"> daily</span> dialog gallery journal link motion music <span style="font-size:2.2rem;"> photo </span>
+  <span style="font-size:1.6rem;">professional</span> quotation show sound tv video
+ </span>
+<h3>Archives</h3>
+<ul class="posts">
+ <li class="actif "><a href="#"> May 2020</a></li>
+ <li><a href="#">April 2020</a></li>
+</ul>
+</article>
+<article class="m3 tag">
+
+ <!---ABOUT-->
+ <h3>About</h3>
+    <p>
+     I m alone, and feel the charm of existence in this spot, which was created
+     for the bliss of saouls like mine.
+    </p>
+    <p>
+    I m so happy, my dear friend, so absorbed in the exquisite sense of mere
+    tranquil existence, that I<br/> neglect my talents.
+   </p>
+  </article>
+
+<!---Copyright-->
+  <div id="copyright" class="grille">
+    <p>&copy; Copyright 2020 -The Meridian sun</p>
+   </div>
+  </footer>
+ </body>
+</html>

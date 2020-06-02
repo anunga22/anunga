@@ -1,0 +1,38 @@
+/*
+  ./src/scss/ieps_framework/modules/_boites.scss
+  Module des boites
+ */
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .boite-fixe-centree {
+    width: 100%;
+    //max-width: $boiteLargeur;
+    margin: 0;
+  	padding: 0;
+   //padding: 0 0 50px 0;// Bas de la boite
+  }
+  .boite_bords {
+    border: $boiteBordsCouleur $boitesDimension solid;
+    padding: $boitesBordPadding;
+  }
+  .boite-flottante-gauche {
+    float:left;
+    margin-right:$boiteFlottanteMargin;
+    width: $boiteFlottanteLargeur;
+  }
+  .boite-flottante-droite {
+    float:right;
+    margin-left:$boiteFlottanteMargin;
+    width: $boiteFlottanteLargeur;
+  }
+.boite-flottante-gauche img,.boite-flottante-droite img {
+  width: 100%;
+}
+.boite-clearfix:after {//after à la fin de
+  content:'';//mettre à la fin de
+  display:block;
+  clear:both;
+}

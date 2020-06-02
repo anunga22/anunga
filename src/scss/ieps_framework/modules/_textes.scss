@@ -1,0 +1,117 @@
+/*
+./src/scss/ieps_framework/modules_textes.scss
+    MODULES DES TEXTES
+ */
+
+@import '../variables';
+
+.texte_decoration__none {
+  text-decoration: none;
+}
+.list__style__none {
+  list-style:none;
+}
+
+.texte_font__1 {
+  font-family: $texteFont1;
+}
+.texte_font__2 {
+  font-family: $texteFont2;
+}
+.texte_font__3 {
+  font-family: $texteFont3;
+}
+/* -----------------------------------------
+ ALIGNEMENT DES TEXTES
+----------------------------------------- */
+
+  .texte_alignement__centre {
+    text-align: center;
+  }
+  .texte_alignement__gauche {
+    text-align: left;
+  }
+  .texte_alignement__droite {
+    text-align: right;
+  }
+  .texte_alignement__justifie {
+    text-align: justify;
+  }
+/* -----------------------------------------
+   COULEURS DES TEXTES
+  ----------------------------------------- */
+
+    .texte_couleur__1 {
+      color: $couleur1;
+    }
+    .texte_couleur__2 {
+      color: $couleur2;
+    }
+    .texte_couleur__3 {
+      color: $couleur3;
+    }
+    .texte_couleur__F1 {
+      color: $couleurF1;
+    }
+/* -----------------------------------------
+   TAILLES DES TEXTES
+  ----------------------------------------- */
+    .texte_taille_tres_grand {
+      font-size:$texteTailleTresGrand;
+    }
+    .texte_taille__grand {
+      font-size: $texteTailleGrand;
+    }
+    .texte_taille__medium {
+      font-size: $texteTailleMedium;
+    }
+    .texte_taille__petit {
+      font-size: $texteTaillePetit;
+    }
+    .texte_taille__tres_petit {
+    font-size: $texteTailleTresPetit;
+  }
+/* -----------------------------------------
+  TYPES DE TEXTES
+----------------------------------------- */
+    .texte_type__majuscules {
+      text-transform: uppercase;
+    }
+    .texte-_type__minuscules {
+      text-transform: lowercase;
+    }
+    .texte_type__capitales {
+      text-transform: capitalize;
+
+  }
+  .texte_type__italiques {
+    font-style: italic;
+
+}
+.line_height {
+  line-height: 1.5em;
+}
+
+/* -----------------------------------------
+      MARGIN
+----------------------------------------- */
+
+.margin_bottom {
+  margin-bottom:40px;
+}
+
+.margin_top {
+  margin-top:40px;
+}
+.margin-right {
+  margin-right:1em;
+}
+.margin-left{
+  margin-left:0;
+}
+.margin {
+  margin:0;
+}
+.padding-left {
+    padding-left:0;
+}

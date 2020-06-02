@@ -1,0 +1,24 @@
+/*
+./src/scss/ieps_framework/modules/_visibilites.scss
+ Modules des visibilites
+ */
+
+ .utilitaire_visibilite__none {
+   display: none;
+ }
+
+ @each $etiquette, $dimension in $breakpoints {
+
+   .#{$etiquette}-visible {
+     display: none;
+     }
+
+  @media screen and (min-width: #{$dimension}) {
+    .#{$etiquette}-cache {
+       display: none;
+      }
+    .#{$etiquette}-visible {
+       display: block;
+     }
+  }
+}

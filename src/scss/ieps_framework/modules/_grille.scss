@@ -1,0 +1,56 @@
+/*
+./src/scss/ieps_framework/modules/_grilles.scss
+Modules de la grille
+*/
+
+/*
+. grille qui correspond au conteneur
+et qui cree un systeme de 12 colonnes
+avec un e goutière de 1em
+
+.1 .... c12 qui correspondent aux items
+et qui permettent de définir
+le nbre de colonnes prise par cet aux items
+
+.l....r12 qui correspondent aux aux items
+et qui permettent de définir le nbre de lignes
+prises par cet item
+*/
+
+// LE CONTENEUR --------------------------
+  .grille {
+    display: grid;
+    grid-template-columns: repeat($grilleNombreColonnes, 1fr);
+    &.grille-gouttiere {
+      grid-gap: $grilleGouttiere;
+    }
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .grille2 {
+    display: grid;
+    grid-template-columns: repeat($grilleNombreColonnes, 1fr);
+    &.grille-gouttiere {
+      grid-gap:0;
+    }
+
+  }
+
+// TOUS LES ITEMS A $grilleNombreColonnes COLONNES PAR DEFAUT
+  .grille > * {
+    grid-column: span $grilleNombreColonnes;
+  }
+
+  @each $etiquette, $dimension in $breakpoints {
+    @media screen and (min-width: $dimension){
+      @for $i from 1 through $grilleNombreColonnes {
+        .#{$etiquette}#{$i} {
+          grid-column: span $i;
+        }
+        .#{$etiquette}-r#{$i} {
+          grid-row: span $i;
+        }
+      }
+    }
+  }

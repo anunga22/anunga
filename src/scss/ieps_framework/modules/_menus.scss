@@ -1,0 +1,74 @@
+/*
+./src/scss/ieps_framework/modules/_menus.scss
+ MODULE DES MENUS
+*/
+
+
+// --------------- Menu type horizontal ---------------
+
+.menu_type__horizontal{
+
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  text-decoration: none;
+  margin: 5px 5px 5px 5px;
+  //padding:10px;
+  align-items: center;
+  text-align: center;
+
+  //padding: $menuGoutiere;
+
+  }
+  .menu_type__horizontal > li > a  {
+    padding: 10px 10px 20px ;
+    color: white;
+    text-decoration: none;
+    font-size: $texteTailleTresPetit;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: $texteFont2;
+    align-items: center;
+
+  }
+  .menu_type__horizontal_1{
+
+    display: flex;
+    justify-content: $menuJustifyContent;
+    list-style: none;
+    text-decoration: none;
+    margin: 30px 10px;
+    padding: 5px 15px ;
+    align-items: $menuAlignVertical;
+    text-align: center;
+    padding: $menuGoutiere;
+    @media screen and (min-width: 800px) {
+      margin-top: -33px;
+      margin-right: 7em;
+      //margin-left: px;
+      padding:7px 7px 0 7px;
+      float: right;
+
+    }
+    @media screen and (min-width: 1000px) {
+     padding:7px 7px 0 7px;
+     margin-right: 6em;
+
+    }
+  }
+    .menu_type__horizontal_1 > li > a  {
+      padding: 0px 2px;
+      color: white;
+      text-decoration: none;
+      font-size: $texteTaillePetit;
+      text-transform: uppercase;
+      //text-align: right;
+       @media screen and (min-width: 800px) {
+         padding: 5px 3px;
+       }
+       @media screen and (min-width: 1000px) {
+         margin-right:10px;
+          padding: 0px ;
+       }
+
+    }

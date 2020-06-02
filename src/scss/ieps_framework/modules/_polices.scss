@@ -1,0 +1,27 @@
+/*
+./src/scss/ieps_framework/modules/_policess.scss
+ MODULE DES POLICES
+*/
+ @font-face {
+   font-family: 'kaushanscript-regular';
+   src: url('../../../polices/kaushanscript-regular-webfont.woff2') format('woff2'),
+        url('../../../polices/kaushanscript-regular-webfont.woff') format('woff');
+   font-style: normal;
+   font-weight: normal;
+
+ }
+ @font-face {
+    font-family: 'Market Deco';
+    src: url('../../../polices/MarketDeco.woff2') format('woff2'),//Indiquer le chemin de la police de caractère, on prend le format ''woff2' car c'est le plus moderne
+                                                                   //et ensuite On met aussi l'ancien format pour les anciens navigateurs
+        url('../../../polices/MarketDeco.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Merriweather';
+    src: url('../../../polices/Merriweather-Regular.woff2') format('woff2'),
+        url('../../../polices/Merriweather-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

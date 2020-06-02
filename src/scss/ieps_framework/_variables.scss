@@ -1,0 +1,110 @@
+/*
+  ./src/scss/ieps_framework/_variables.css
+  Variables du framework IEPS CSS
+ */
+
+ /* ----------------------------------------
+    COULEURS
+ ----------------------------------------- */
+ // PALETTE DE COULEURS
+ $couleur1:#6b6b6b ; //Police-Gris
+ $couleur2:#b05a5a;  //rouille
+ $couleur3:#a0a0a0;  // Gris clair
+ $couleurNeutre: #999; // Police -Gris moyen
+ $couleurLight: #fff; //blanc
+
+ //  COULEURS DE FOND
+ $couleurF1:#2e2e2e ;  //Fond de page
+ $couleurF2:#191919;  //Fond footer
+ $couleurF3:#fff;     //Fond de la boite
+ $couleurF4:#f8f9fa;  //Gris tres clair
+
+
+ /* -----------------------------------------
+           MODULE DES BOITES
+ ----------------------------------------- */
+
+    $boiteLargeur: auto;
+
+  /*
+  ------------BORDS DES BOITES--------------------
+  */
+          $boiteBordsCouleur: $couleurF1;
+          $boitesDimension: 3px;
+          $boitesBordPadding: 1rem;
+
+  /*
+  ------------BORDS FLOTTANTES--------------------
+  */
+          $boiteFlottanteLargeur: 200px;
+          $boiteFlottanteMargin: 1rem;
+
+
+/* -----------------------------------------
+                 3. LES TEXTES
+  ----------------------------------------- */
+
+    $texteFont1: 'Merriweather', serif; //(TEXTES)
+    $texteFont2: 'Market Deco';         //(TITRES)
+    $texteFont3: 'Kaushan Script', cursive;   //(LOGO)
+
+    $texteTailleTresGrand: 2.6rem;
+    $texteTailleGrand: 1.6rem;
+    $texteTailleMedium: 1.2rem;
+    $texteTaillePetit: .8rem;
+    $texteTailleTresPetit: .7rem;
+
+  /* -----------------------------------------
+            LES MENUS
+     ----------------------------------------- */
+
+    // MENU_TYPE__HORIZONTAL
+        $menuGoutiere: 3px;
+        $menuJustifyContent: center;
+        $menuAlignVertical: center;
+
+        /* -----------------------------------------
+             6. LES PAGINATIONS
+           ----------------------------------------- */
+           $paginationJustifyContent: center;
+           /* flex-start, flex-end, center,
+              space-between, space-around, stretch */
+           $paginationAlignVertical: center;
+           /* stretch, center, baseline */
+           $paginationPadding: .25em .5em;
+
+           // Etat normal
+           $paginationCouleurNormal: $couleur1;
+           $paginationCouleurTexteNormal: #fff;
+           $paginationBordNormal: $couleur1 1px solid;
+
+           // Etat actif et hover
+           $paginationCouleurActif: $couleurF1;
+           $paginationCouleurTexteActif: #fff;
+
+
+  /* -----------------------------------------
+                  MODULE DE LA GRILLE
+  ----------------------------------------- */
+            $grilleNombreColonnes: 12;
+            $grilleGouttiere:      1em;
+
+            $breakpoints: (
+                'xs' : '0',
+                's'  : '600px',
+                'm'  : '800px',
+                'l'  : '1000px',
+                'xl' : '1200px'
+                );
+    /*
+      - Toutes les étiquettes xs1 ... xs12
+        (Pour écran style portrait mobile(>0px))
+      - Toutes les étiquettes s1 ... s12
+        (Pour écran style landscape mobile(>600px))
+      - Toutes les étiquettes m1 ... m12
+        (pour écran style portrait tablets navbar collapse (>800px))
+      - Toutes les étiquettes l1 ... l12
+        (pour écran style landscape tablets (>1000px))
+      - Toutes les étiquettes xl1 ... xl12
+        (pour écran style laptops, descktops, tvs (>1200px))
+    */
